@@ -17,7 +17,7 @@
 //     .reduce(
 //       (a, l, i) => [
 //         ...a,
-//         ...s.split("").map((q, j) => s.slice(i, j + 1).trim())
+//         ...s.split("").map((_, j) => s.slice(i, j + 1).trim())
 //       ],
 //       []
 //     )
@@ -25,11 +25,11 @@
 //     .sort((a, b) => b.length - a.length);
 // const largestCommonSubstring = (o, t) => {
 //   const m = [...g(o, t), ...g(t, o)];
-//   return m.length > 0 ? m[0] : false;
+//   return m.length > 0 && m[0];
 // };
 
 // Minified solution - 246 characters
-let g=(t,e)=>e.split("").reduce((t,l,n)=>[...t,...e.split("").map((t,l)=>e.slice(n,l+1).trim())],[]).filter(e=>!!e&&t.includes(e)).sort((t,e)=>e.length-t.length),largestCommonSubstring=(t,e)=>{let l=[...g(t,e),...g(e,t)];return l.length>0&&l[0]};
+let g=(t,s)=>s.split("").reduce((a,l,i)=>[...a,...s.split("").map((_,j)=>s.slice(i,j+1).trim())],[]).filter(a=>!!a&&t.includes(a)).sort((a,b)=>b.length-a.length),largestCommonSubstring=(o,t)=>{let m=[...g(o,t),...g(t,o)];return m.length>0&&m[0]};
 
 // Don't edit anything after this line.
 
