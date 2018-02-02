@@ -11,7 +11,7 @@
  **/
 
 // Un-minified solution
-// const g = (t, s) =>
+// let g = (t, s) =>
 //   s
 //     .split("")
 //     .reduce(
@@ -23,8 +23,8 @@
 //     )
 //     .filter(a => !!a && t.includes(a))
 //     .sort((a, b) => b.length - a.length);
-// const largestCommonSubstring = (o, t) => {
-//   const m = [...g(o, t), ...g(t, o)];
+// let largestCommonSubstring = (o, t) => {
+//   let m = [...g(o, t), ...g(t, o)];
 //   return m.length > 0 && m[0];
 // };
 
