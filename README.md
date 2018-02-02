@@ -4,7 +4,9 @@
 
 ## About
 
-All Tests Pass is a weekly newsletter by [Brandon Morrison](https://twitter.com/fillerwriter). Each week subscribers must solve a short JavaScript puzzle. This GitHub repository contains my solutions.
+All Tests Pass is a weekly newsletter by [Brandon Morrison](https://twitter.com/fillerwriter). Each week subscribers must solve a short JavaScript puzzle. You can subscribe [here](https://tinyletter.com/alltestspass).
+
+This GitHub repository contains my solutions.
 
 
 ## Solutions
